@@ -12,24 +12,6 @@ Confidence score
 Display results in a table.
 Progress bar during extraction.
 JSON output for integration.
-Project Structure
-
-smart_invoice/
-├── main.py                  # FastAPI app entrypoint
-├── uploads/                 # Uploaded invoice images
-├── src/
-│   ├── services/
-│   │   └── invoice_service.py
-│   ├── model/
-│   │   └── vlm_model.py
-│   └── constants.py
-├── static/
-│   ├── css/style.css
-│   └── js/script.js
-├── templates/
-│   └── index.html
-├── models/                  # Large model files (ignored in Git)
-└── README.md
 
 Requirements
 Python 3.10+
