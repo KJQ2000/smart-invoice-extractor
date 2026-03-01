@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Invoice Extractor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>Invoice Extraction</h1>
+
+<input type="file" id="invoiceFile">
+<button onclick="uploadInvoice()">Extract</button>
+
+<div id="progressContainer" style="width: 100%; margin-top: 10px; display: none;">
+    <div id="progressBar" style="width: 0%; height: 20px; background-color: #4caf50;"></div>
+</div>
+
+<table id="resultTable">
+    <thead>
+        <tr>
+            <th>Supplier</th>
+            <th>Total Price</th>
+            <th>Payment Method</th>
+            <th>Date Time</th>
+            <th>Confidence</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
